@@ -5,7 +5,15 @@ namespace UI
 {
     public class DefenderSpawner : MonoBehaviour
     {
+        private Camera mainCamera;
         private Defender defender;
+        private Resources resources;
+
+        private void Awake()
+        {
+            mainCamera = Camera.main;
+            resources = FindObjectOfType<Resources>();
+        }
         private void OnMouseDown()
         {
             AttemptToPlaceDefender(GetSquareClicked());
@@ -14,21 +22,27 @@ namespace UI
         {
             defender = defenderToSelect;
         }
-
         private void AttemptToPlaceDefender(Vector2 gridPos)
         {
-            var resources = FindObjectOfType<Resources>();
-            int unitCost = defender.GetCost();
-            if (resources.HasResources(unitCost))
+            if (defender)
             {
-                SpawnDefender(gridPos);
-                resources.SpendResources(unitCost);
+                int unitCost = defender.GetCost();
+                if (resources.HasResources(unitCost))
+                {
+                    SpawnDefender(gridPos);
+                    resources.SpendResources(unitCost);
+                }
+            }
+
+            else
+            {
+                //TODO: play error sound to tell player he has to select a defender
             }
         }
         private Vector2 GetSquareClicked()
         {
             var clickPos = new Vector2(Input.mousePosition.x, Input.mousePosition.y);
-            Vector2 worldPos = Camera.main.ScreenToWorldPoint(clickPos);
+            Vector2 worldPos = mainCamera.ScreenToWorldPoint(clickPos);
             Vector2 gridPos = SnapToGrid(worldPos);
             return gridPos;
         }

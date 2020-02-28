@@ -10,23 +10,19 @@ namespace Global
         {
             currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
         }
-
         public void StartGame()
         {
+            Time.timeScale = 1;
             SceneManager.LoadScene(1);
         }
-        
         public void LoadNextScene()
         {
             SceneManager.LoadScene(currentSceneIndex + 1);
         }
-        public static void LoadGameOverScene()
+        public void LoadMainMenu()
         {
-            SceneManager.LoadScene(SceneManager.sceneCountInBuildSettings - 1);
-        }
-        public void LoadCreditsScene()
-        {
-            SceneManager.LoadScene(SceneManager.sceneCountInBuildSettings - 1);
+            Time.timeScale = 1;
+            SceneManager.LoadScene(0);
         }
         public void QuitGame()
         {

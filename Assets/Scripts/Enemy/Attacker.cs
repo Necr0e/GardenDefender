@@ -29,7 +29,10 @@ namespace Enemy
 
         private void OnDestroy()
         {
-            levelController.AttackedKilled();
+            if (levelController != null)
+            {
+                levelController.AttackedKilled();
+            }
         }
 
         private void MoveForward()

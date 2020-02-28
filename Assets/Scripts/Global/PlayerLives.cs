@@ -7,10 +7,12 @@ namespace Global
     {
         [SerializeField] private int lives = 5;
         private TextMeshProUGUI livesText;
+        private LevelController levelController;
 
         private void Awake()
         {
             livesText = GetComponent<TextMeshProUGUI>();
+            levelController = FindObjectOfType<LevelController>();
         }
         private void Start()
         {
@@ -26,7 +28,7 @@ namespace Global
             UpdateDisplay();
             if (lives <= 0)
             {
-                LevelLoader.LoadGameOverScene();
+                levelController.HandleLoseCondition();
             }
         }
     }

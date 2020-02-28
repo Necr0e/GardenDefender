@@ -10,7 +10,7 @@ namespace UI
 #pragma warning restore 0649
         private void OnMouseDown()
         {
-            DefenderButton[] buttons = FindObjectsOfType<DefenderButton>();
+            var buttons = FindObjectsOfType<DefenderButton>();
             foreach (DefenderButton button in buttons)
             {
                 button.GetComponent<SpriteRenderer>().color = new Color32(41,41,41,255);
