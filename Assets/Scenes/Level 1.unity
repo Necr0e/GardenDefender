@@ -310,6 +310,19 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1274811506}
     m_Modifications:
+    - target: {fileID: 250912284, guid: 09cf4547240e1ed47962b11bfeb89a08, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 5798690325160196957}
+    - target: {fileID: 1678060780, guid: 09cf4547240e1ed47962b11bfeb89a08, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 5798690325160196957}
+    - target: {fileID: 580932382754396343, guid: 09cf4547240e1ed47962b11bfeb89a08,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 5798690325160196957}
     - target: {fileID: 3563047577814152734, guid: 09cf4547240e1ed47962b11bfeb89a08,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -323,22 +336,22 @@ PrefabInstance:
     - target: {fileID: 3563047577814152734, guid: 09cf4547240e1ed47962b11bfeb89a08,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3563047577814152734, guid: 09cf4547240e1ed47962b11bfeb89a08,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3563047577814152734, guid: 09cf4547240e1ed47962b11bfeb89a08,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3563047577814152734, guid: 09cf4547240e1ed47962b11bfeb89a08,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3563047577814152734, guid: 09cf4547240e1ed47962b11bfeb89a08,
         type: 3}
@@ -373,7 +386,7 @@ PrefabInstance:
     - target: {fileID: 3563047577814152734, guid: 09cf4547240e1ed47962b11bfeb89a08,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0.82
+      value: 1.72
       objectReference: {fileID: 0}
     - target: {fileID: 3563047577814152734, guid: 09cf4547240e1ed47962b11bfeb89a08,
         type: 3}
@@ -415,7 +428,7 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
-    - target: {fileID: 7252825672891407329, guid: 09cf4547240e1ed47962b11bfeb89a08,
+    - target: {fileID: 4664258725119618582, guid: 09cf4547240e1ed47962b11bfeb89a08,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -425,11 +438,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Game Over Canvas
       objectReference: {fileID: 0}
-    - target: {fileID: 7729312238760636106, guid: 09cf4547240e1ed47962b11bfeb89a08,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 5798690325160196957}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 09cf4547240e1ed47962b11bfeb89a08, type: 3}
 --- !u!1001 &2766222891723555741
@@ -853,7 +861,7 @@ PrefabInstance:
     - target: {fileID: 6410119120876276308, guid: 4d1cbb2b485e0bc4090f574263ce7f2f,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6410119120876276308, guid: 4d1cbb2b485e0bc4090f574263ce7f2f,
         type: 3}
