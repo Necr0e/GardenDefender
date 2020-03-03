@@ -11,6 +11,7 @@ namespace Global
         private void OnTriggerEnter2D(Collider2D other)
         {
             lifeCount.TakeLife();
+            Destroy(other.gameObject);
         }
     }
 }

@@ -8,11 +8,27 @@ namespace UI
         private Camera mainCamera;
         private Defender defender;
         private Resources resources;
+        private GameObject defenderParent;
+        private const string DefenderParentName = "Defenders";
 
         private void Awake()
         {
             mainCamera = Camera.main;
             resources = FindObjectOfType<Resources>();
+            defenderParent = GameObject.Find(DefenderParentName);
+        }
+
+        private void Start()
+        {
+            CreateDefenderParent();
+        }
+
+        private void CreateDefenderParent()
+        {
+            if (!defenderParent)
+            {
+                defenderParent = new GameObject(DefenderParentName);
+            }
         }
         private void OnMouseDown()
         {
@@ -50,6 +66,7 @@ namespace UI
         {
             if (!defender) { return; }
             Defender newDefender = Instantiate(defender, worldPos, Quaternion.identity);
+            newDefender.transform.parent = defenderParent.transform;
         }
         private Vector2 SnapToGrid(Vector2 rawWorldPos)
         {

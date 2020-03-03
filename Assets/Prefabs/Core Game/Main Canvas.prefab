@@ -143,8 +143,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -722, y: 0}
-  m_SizeDelta: {x: 100, y: 100}
+  m_AnchoredPosition: {x: -801.6, y: -4}
+  m_SizeDelta: {x: 163.2, y: 1080}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!61 &358718820
 BoxCollider2D:
@@ -159,7 +159,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -65.41565, y: -49.470825}
+  m_Offset: {x: -6.8796387, y: 7.702759}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -170,7 +170,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 132.8313, y: 929.48376}
+  m_Size: {x: 149.55588, y: 1043.8308}
   m_EdgeRadius: 0
 --- !u!114 &358718819
 MonoBehaviour:
@@ -353,7 +353,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9982cd5259415bb4ea19d2103d3f00cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lives: 5
 --- !u!1 &1039911961
 GameObject:
   m_ObjectHideFlags: 0
@@ -492,7 +491,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3aebb8ca3d5920d45b865fff19a3d9f0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  levelTime: 5
+  levelTime: 60
 --- !u!1 &1508834915
 GameObject:
   m_ObjectHideFlags: 0
@@ -835,7 +834,7 @@ GameObject:
   - component: {fileID: 6410119120876276330}
   - component: {fileID: 6410119120876276331}
   m_Layer: 5
-  m_Name: Map Canvas
+  m_Name: Main Canvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

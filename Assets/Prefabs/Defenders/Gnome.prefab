@@ -122,10 +122,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4934452469418388411}
-  - component: {fileID: 6284902146304327129}
   - component: {fileID: 1690933272743391548}
-  - component: {fileID: 4816310409456238704}
   - component: {fileID: 2654576396329623559}
+  - component: {fileID: 4816310409456238704}
+  - component: {fileID: 6284902146304327129}
   - component: {fileID: 3917360041746745706}
   m_Layer: 0
   m_Name: Gnome
@@ -149,19 +149,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &6284902146304327129
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7748033367190783038}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8b08ec0dd780a734882c9582f5adcfd9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  resourceCost: 200
 --- !u!95 &1690933272743391548
 Animator:
   serializedVersion: 3
@@ -181,21 +168,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &4816310409456238704
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7748033367190783038}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fa6ebd2026dfffd4aa994dda42c43524, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  projectile: {fileID: 6015707832834659194, guid: 67cf720444ba1454fa084550d6c7b515,
-    type: 3}
-  launchLocation: {fileID: 2608422175479776191}
 --- !u!61 &2654576396329623559
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -222,6 +194,34 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.71101534, y: 1.2683427}
   m_EdgeRadius: 0
+--- !u!114 &4816310409456238704
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7748033367190783038}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa6ebd2026dfffd4aa994dda42c43524, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  projectile: {fileID: 6015707832834659194, guid: 67cf720444ba1454fa084550d6c7b515,
+    type: 3}
+  launchLocation: {fileID: 2608422175479776191}
+--- !u!114 &6284902146304327129
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7748033367190783038}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8b08ec0dd780a734882c9582f5adcfd9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  resourceCost: 150
 --- !u!114 &3917360041746745706
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -234,5 +234,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: efe6d9243898cb4468840793556b8130, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 75
+  health: 50
   deathVfx: {fileID: 1906222994913036, guid: 740c2b3187d56c341b8cb78e8aa925c5, type: 3}

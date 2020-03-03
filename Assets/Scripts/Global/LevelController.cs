@@ -29,12 +29,12 @@ namespace Global
             winLabel.SetActive(false);
             loseLabel.SetActive(false);
         }
-        IEnumerator HandleWinCondition()
+
+        private IEnumerator HandleWinCondition()
         {
             winLabel.SetActive(true);
             audioSource.Play();
             yield return new WaitForSeconds(WaitToLoad);
-            levelLoader.LoadNextScene();
         }
         public void HandleLoseCondition()
         {

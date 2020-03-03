@@ -68,7 +68,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d581dbb01857e4d47af1eea75698ebbe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currentSpeed: 2
+  currentSpeed: 1
 --- !u!61 &2468283260544804009
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -128,7 +128,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: efe6d9243898cb4468840793556b8130, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 100
+  health: 500
   deathVfx: {fileID: 1906222994913036, guid: 740c2b3187d56c341b8cb78e8aa925c5, type: 3}
 --- !u!114 &7820042349948232597
 MonoBehaviour:
