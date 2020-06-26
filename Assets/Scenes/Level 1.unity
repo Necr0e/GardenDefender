@@ -967,6 +967,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1003135156, guid: 4d1cbb2b485e0bc4090f574263ce7f2f, type: 3}
+      propertyPath: m_text
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1003135156, guid: 4d1cbb2b485e0bc4090f574263ce7f2f, type: 3}
+      propertyPath: m_textInfo.characterCount
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1508834916, guid: 4d1cbb2b485e0bc4090f574263ce7f2f, type: 3}
       propertyPath: m_AnchorMin.x
       value: 0
